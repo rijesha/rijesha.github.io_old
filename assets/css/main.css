@@ -529,6 +529,8 @@
 					text-align: center;
 					text-indent: 3.75em;
 					white-space: nowrap;
+					text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;
+
 				}
 
 					ul.icons li a:before {
@@ -542,7 +544,6 @@
 
 					ul.icons li a:before {
 						color: #ffffff;
-						text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;
 					}
 
 					ul.icons li a:hover:before {
