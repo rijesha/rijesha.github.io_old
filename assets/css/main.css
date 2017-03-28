@@ -773,6 +773,14 @@
 			transform: rotateX(15deg);
 		}
 
+/*About Me*/
+#aboutme {
+	position: relative;
+	padding: 0 0 0.4em 0 ;
+	opacity: 0.95;
+	text-align: center;
+}
+
 /* Footer */
 
 	#footer {

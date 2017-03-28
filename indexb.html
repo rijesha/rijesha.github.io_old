@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<!--
+	Identity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Rijesh Augustine</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-loading" id ="bdy">
+
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+						<header>
+
+						<div id="mainpage">
+							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+						</div>
+						<div id="aboutme" class="aboutmepadding">
+							<h2>About Me</h2>
+							<p>I also keep bees and fly RC airplanes.
+								<br>Right now im in a Masters program @ the
+								<br>University of Alberta and working with Radar.
+								<br>Interests include astrophotography,
+								<br>neural nets, and functional programming.
+							</p>
+						</div>
+						<h1>Rijesh Augustine</h1>
+						<p>Tree Climber / Photographer / Peafowl Enthusiast</p>
+
+
+
+
+						</header>
+						<footer>
+							<ul class="icons">
+								<li><a title="About Me" href="#" id="ambtn" class="fa-user" onclick="toggle();" onmouseover="hover();" onmouseout="stopHover();">About Me</a></li>
+								<li><a title="Github" href="http://github.com/rijesha" class="fa-github">Github</a></li>
+								<li><a title="Twitter" href="http://twitter.com/rijesha" class="fa-twitter">Twitter</a></li>
+								<li><a title="Instagram" href="http://instagram.com/rijesha" class="fa-instagram">Instagram</a></li>
+								<li><a title="Flickr" href="http://flickr.com/rijesha" class="fa-flickr">Flickr</a></li>
+								<li><a title="Youtube" href="http://youtube.com/rijesha" class="fa-youtube-play">Youtube</a></li>
+								<li><a title="Blog" href="blog.html" class="fa-rss">Blog</a></li>
+							</ul>
+						</footer>
+
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright" style="color:black">
+							<li>&copy; Rijesh Augustine</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+			<script>
+
+			var setBG = function(num){
+				var bd = document.getElementById('bdy');
+				var urlstr = "images/bg"+num+".jpg";
+				bd.style.backgroundImage = "url(assets/css/images/overlay.png), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("+urlstr+");";
+				bd.style.backgroundImage = "url('assets/css/images/overlay.png'), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("+urlstr+");";
+				bd.style.backgroundImage = "url('assets/css/images/overlay.png'), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("+urlstr+");";
+				bd.style.backgroundImage = "url('assets/css/images/overlay.png'), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("+urlstr+");";
+			}
+
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+					var rand=Math.floor(Math.random()*5)
+					setBG(rand);
+				}
+
+				var aboutme = document.getElementById('aboutme');
+				var maintxt = document.getElementById('mainpage');
+				var ambtn = document.getElementById('ambtn');
+				aboutme.style.display = 'none';
+
+				var changeIconColor = function(color){
+					ambtn.style.borderColor =  color;
+					ambtn.style.textShadow = "1.25px 0px 0px "+color +", -1.25px 0px 0px "+color +", 0px 1.25px 0px "+color +", 0px -1.25px 0px "+color;
+				}
+
+				var hover = function() {
+					changeIconColor('#ff7496');
+				}
+
+				var stopHover = function() {
+					if (aboutme.style.display === 'none')
+					changeIconColor('#c8cccf');
+				}
+
+				var toggle = function() {
+  			if (maintxt.style.display === 'block' || maintxt.style.display === ''){
+					maintxt.style.display = 'none';
+					aboutme.style.display = 'block';
+					changeIconColor('#ff7496');
+				}
+    		else {
+					maintxt.style.display = 'block';
+					aboutme.style.display = 'none';
+					changeIconColor('#c8cccf');
+				}
+
+
+
+  			}
+			</script>
+
+	</body>
+</html>
